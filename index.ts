@@ -1,9 +1,9 @@
 require('dotenv').config();
 import { Client } from 'discord.js';
-import enmap from 'enmap';
+//import enmap from 'enmap';
 import { readdirSync } from 'fs';
 import { resolve } from 'path';
-const Enmap = require('enmap') as typeof enmap;
+//const Enmap = require('enmap') as typeof enmap;
 export const client = new Client({
   intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS']
 });
@@ -34,7 +34,7 @@ export const users = new Enmap<
 >({ name: 'users' });
 
 (async () => {
-  console.log('preparing events...');
+  console.log('> Preparando eventos...');
   const eventFiles = readdirSync(resolve('./events'));
   for (const fileName of eventFiles) {
     const fileNameWithoutExtension = fileName.slice(0, -3);

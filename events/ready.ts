@@ -3,7 +3,7 @@ import config from '../config';
 import { getRandomFrom } from '../utils';
 
 const event = () => {
-  console.log('caching stuff...');
+  console.log('> Cacheando uns bagulho...');
   client.guilds.fetch(config.guildId).then(async (guild) => {
     await guild.members.fetch();
     console.log('ready');

@@ -27,7 +27,7 @@ function chatChallengesHandler(message: Message) {
       message.channel.send({
         embeds: [
           createChallengeEmbed(
-            'alguém retirou o desafio que estaria aqui... e é isso.',
+            'Alguém retirou o desafio que estaria aqui... Bem, fazer o quê.',
             'rare'
           )
         ]
